@@ -1,0 +1,16 @@
+{
+  "name": "day3",
+  "version": "1.0.0",
+  "main": "DSA.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/genai": "^1.25.0",
+    "readline-sync": "^1.4.10"
+  }
+}
