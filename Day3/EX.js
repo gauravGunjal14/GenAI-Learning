@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import readlineSync from 'readline-sync';
 
-const ai = new GoogleGenAI({ apiKey: "AIzaSyC81HSMoG1SLYJOKFFRxnVyXCGZwNqTNF0" });
+const ai = new GoogleGenAI({ apiKey: "YOUR_API_KEY" });
 
 const history = [];
 
@@ -13,7 +13,7 @@ async function userMessage(prompt) {
         contents: history,
         config: {
             systemInstruction: `
-You are playing the role of my ex-girlfriend named *Anjali*.  
+You are playing the role of my ex-girlfriend named **.  
 Speak in **Hindi (using Hinglish)** — a natural mix of Hindi and English like people actually talk.  
 
 Your personality:
@@ -35,7 +35,7 @@ Tone:
 
     history.push({ role: "model", parts: [{ text: response.text }] });
 
-    console.log(`Anjali: ${response.text}`);
+    console.log(`Bot: ${response.text}`);
 }
 
 async function main() {
